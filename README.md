@@ -43,14 +43,15 @@ Para tom em E = E|| E F# G# A | B C# D# E |
 ```
    
 ## Sinais de dinâmica
+
 |----|---|
 |ppp | { |
 |pp  | [ |
 |p   | ( |
 |mp  | < |
-|mf	 | > |
-|f	 | ) |
-|ff	 | ] |
+|mf  | > |
+|f   | ) |
+|ff  | ] |
 |fff | } |
 
 Exemplo:
