@@ -1,4 +1,4 @@
-# Notacao-de-Frachen
+# Notação de Frachen
 Uma forma de escrever melodias musicas no computador com textos simples
 
 ## Notas musicais
