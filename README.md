@@ -1,10 +1,10 @@
 # Notacao-de-Frachen
 Uma forma de escrever melodias musicas no computador com textos simples
 
-##Notas musicais
+## Notas musicais
 É necessário que você já tenha um conhecimento musical mínino a fim de utilizar essa notação, usaremos a  a notação de Cifras como base de escrita, ou seja, as notas serão representadas pelas letras: A B C D E F G
 
-##Compasso
+## Compasso
 simbolo: |
 
 ```
@@ -17,7 +17,7 @@ ex: | C D E F | G A B C |
 |  C | C | D | E  | F | G | A | B  |
 |  D | D | E | F# | G | A | B | C# |
 
-###Khz ou intervalos de 8ª
+### Khz ou intervalos de 8ª
 
 | C3	| D3	| E3	| F3	| G3	| A3	| B3    | A4  | A5   |
 |-------|-------|-------|-------|-------|-------|-------|-----|------|
@@ -33,7 +33,7 @@ Forma abreviada: C||3 C  D  E  F  | G  A  B  C4 |
                  C||3 1  2  3  4  | 5  6  7  1/ |
 ```
 
-###Representação do da música 
+### Representação do da música 
 Utilize o simbolo correspondente ao tom desejado no incio da escrita
 Exemplo:
 ```
@@ -42,7 +42,7 @@ Trascrição      C|| C D E F | G A B C |
 Para tom em E = E|| E F# G# A | B C# D# E |
 ```
    
-##Sinais de dinâmica
+## Sinais de dinâmica
 |----|---|
 |ppp | { |
 |pp  | [ |
@@ -59,7 +59,7 @@ Forma extensa:   | C( D( E( F( | G> A> B> C> |
 Forma abreviada: | C( D E F | G> A B C |
 ```
 
-##Tempo das notas
+## Tempo das notas
 Entendodo o basico do tempo das notas
 a 60BPM 1 = 1s
 
@@ -82,9 +82,9 @@ Exemplo:
 ```
 | C D E+1 | F.5 G.5 A+1 B |
 ```
-##Formas de escrita
+## Formas de escrita
 
-### exemplo de escrita da nota C (Dó) de meio tempo na 3ª oitava com o tom da música em C
+### Exemplo de escrita da nota C (Dó) de meio tempo na 3ª oitava com o tom da música em C
 
 Em graús (Forma completa)
 *C|| 13.5*
@@ -95,28 +95,28 @@ Em cifra (Forma inteligível)
 Em cifra com intervalo abreviado (Forma inteligível simplificada)
 *C||3 C.5*
 
-##Exemplos
+## Exemplos
 
-###Música Parabéns a você
+### Música Parabéns a você
 
-####Com notas de forma abreviada
+#### Com notas de forma abreviada
 ```
 Forma 1: C||3) G.5 G.5 | A G D | C4+3 |
 Forma 2: C||3) G.5 G.5 | A G D |4 C+3 |
 ```
 
-####Com notas por extenso
+#### Com notas por extenso
 ```
 C||) G3.5  G3.5 | A G D | C4+3 |
 ```
 
-####Em Gráus de forma abreviada
+#### Em Gráus de forma abreviada
 ```
 Forma 1: C||3) 5.5 5.5 | 6 5 2 | 14+3 |
 Forma 1: C||3) 5.5 5.5 | 6 5 2 |4 1+3 |
 ```
 
-####Em gráus por extenso
+#### Em gráus por extenso
 ```
 C||) 53.5 53.5 | 63 53 23 | 14+3 |
 ```
