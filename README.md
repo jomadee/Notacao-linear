@@ -1,4 +1,4 @@
-# Notação Lineari
+# Notação linear
 Uma forma de escrever melodias musicas no computador com textos simples
 
 ## Notas musicais
