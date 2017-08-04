@@ -197,13 +197,49 @@ Conforme o exemplo, iremos tocar toda a música até **:|** ao chegar nesse pont
 ```
 
 ### Referência pontual avançada
+Na referência pontual avançada podemos indicamos o ponto de inicio e de fim da execução referenciada, isso se deve utilizando o simbolo de termino de referencia juntamente com um número, ou seja, utilizamos **|:1|**
 
 Exemplo:
 ```
 | C G |: G - A | F E F D |:1| G C4 :|1| G F E D | C - |
 ```
 
+O exemplo acima seria o mesmo que escrever 
 
+```
+| C G | G - A | F E F D | G C4 | G - A | F E F D | G F E D | C - |
+```
+
+Um exemplo com dois terminos de referência
+```
+ 1     2        3            4         5            6
+| C G |: G - A | F E F D |:1| G C4 |:2| G F E D :|1| C - :|2|
+```
+
+Nesse exemplo foi numerado os compassos afim de ver o momento em que serão repetidos
+Escrevendo o exemplo por extenso ficaria dessa forma:
+
+```
+ 1      2      3         4      5         2       3         6     2       3         4            
+| C G | G - A | F E F D | G C4 | G F E D | G - A | F E F D | C - | G - A | F E F D | G C4 |
+```
+
+Explicando esse caso: Tocamos do compasso 1 até 5 onde encontramos a chamada para referência **:|1|** (toque da referencia até 1) então tocamos 2 e 3, após isso seguimos no compasso 6, onde temos uma nova chamda de referência, **:|2|** (toque da referencia até 2) então tocamos os compassos 2, 3 e 4
+
+### Referência pontual avançada 2
+Outra forma de criar referências é de nomearmos o inicio das referencias utilizando o simbolo de incio de referencia juntamente com um número, da seguinte forma: **|1:** ; Para utilizar ao realizar uma chamada indicaremos o numero do inicio e o número do termino separados por um **-** (hífen), **:|1-1|**
+
+Exemplo:
+```
+ 1       2         3            4         5              6
+|1: C G |2: G - A | F E F D |:1| G C4 |:2| G F E D :|2-1| C - :|1-2|
+```
+
+Por extenso teremos a seguinte melodia:
+```
+ 1      2       3         4      5        2       3         6     1     2       3         4
+| C G | G - A | F E F D | G C4 | G F E D | G - A | F E F D | C - | C G | G - A | F E F D | G C4 |
+```
 
 
 ## Comentários
