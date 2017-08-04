@@ -1,11 +1,11 @@
 # Notação linear
-Uma forma de escrever melodias musicas no computador com textos simples
+Uma forma de escrever melodias musicais no computador com textos simples ou até mesmo a mão, sem a necessidade de uma pauta
 
 ## Notas musicais
-É necessário que você já tenha um conhecimento musical mínino a fim de utilizar essa notação, usaremos a  a notação de Cifras como base de escrita, ou seja, as notas serão representadas pelas letras: A B C D E F G
+É necessário que você já tenha um conhecimento musical mínino a fim de utilizar essa notação, usaremos a notação de Cifras como base de escrita, ou seja, as notas serão representadas pelas letras: A B C D E F G
 
 ## Compasso
-simbolo: |
+O simbolo de divisão de compasse será **|**
 
 ```
 ex: | C D E F | G A B C |
@@ -62,23 +62,24 @@ Forma abreviada: | C( D E F | G> A B C |
 ```
 
 ## Tempo das notas
-Entendodo o basico do tempo das notas
-a 60BPM 1 = 1s
+Imaginaremos o seguinte cenario, uma música que está a 60BPM logo teremos uma *batida* por segundo, assim então compreendemos que o tempo inteiro corresponde a **1s**, para demonstrar isso na notação vamos utilizar a seguinte tabela:
 
-|np*	| s		| Transcrição |
+|np*	| s	| Transcrição |
 |-------|-------|-------------|
-|		| 6		| +5          |
-|1		| 4		| +3          |
-|1/2	| 2		| +1          |
-|1/4	| 1		|             |
+|	| 6	| +5          |
+|1	| 4	| +3          |
+|1/2	| 2	| +1          |
+|1/4	| 1	|             |
 |1/8.	| 0,75	|             |
-|1/8	| 	0,5	| .5          |
+|1/8	| 0,5	| .5          |
 |1/16.	| 0,37	|             |
 |1/16	| 0,25	| .25         |
 |1/32.	| 0,18	|             |
 |1/32	| 0,12	| .12         |
 
 *Notação em pauta musical convencional
+
+Logo para escrever uma nota *Mi* que ira durar 2 tempos inteiros deve se escrever **E+1**, ou seja, uma nota Mi inteira mais um; para dizer que irar durar meio tempo deve se escrever **E.5**, ou seja, 50% da duração de um tempo inteiro.
 
 Exemplo:
 ```
