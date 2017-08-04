@@ -183,56 +183,44 @@ Dessa forma dizemos que quando chegarmos a **:|** iremos tocar novamente tudo qu
 | C D E F | F F | C D C D | D D | C G F E | E E | C D E F | F F |
 ```
 ### Referência pontual
-Uma referencia pontual é quando é especificado um ponto de termino da execução para isso deve-se usar o simbolo **|:|**
-Exemplo:
-
-```
-|: C D E F | F F |:| C D C D | D D | C G F E | E E :|
-```
-
-Conforme o exemplo, iremos tocar toda a música até **:|** ao chegar nesse ponto tocamos de **|:** até **|:|**, seria o mesmo que escrever assim:
-
-```
-| C D E F | F F | C D C D | D D | C G F E | E E | C D E F | F F |
-```
-
-### Referência pontual avançada
-Na referência pontual avançada podemos indicamos o ponto de inicio e de fim da execução referenciada, isso se deve utilizando o simbolo de termino de referencia juntamente com um número, ou seja, utilizamos **|:1|**
+Na referência pontual podemos indicamos qual o ponto de inicio de execução referenciada irá ser repetido, isso se deve utilizando o simbolo de incio de referencia juntamente com um número da seguinte forma **|1:**, e na chamada irá ser utilizado o numéro referente a referência desejada, **:1|**
 
 Exemplo:
 ```
-| C G |: G - A | F E F D |:1| G C4 :|1| G F E D | C - |
+| C G |1: G - A | F E F D |: G C4 | G F E D | C - :1|
 ```
 
 O exemplo acima seria o mesmo que escrever 
 
 ```
-| C G | G - A | F E F D | G C4 | G - A | F E F D | G F E D | C - |
+| C G | G - A | F E F D | G C4 | G F E D | C - | G - A | F E F D | G C4 | G F E D | C - |
 ```
 
-Um exemplo com dois terminos de referência
+Um exemplo com dois pontos de referência
 ```
- 1     2        3            4         5            6
-| C G |: G - A | F E F D |:1| G C4 |:2| G F E D :|1| C - :|2|
+ 1     2        3           4        5           6
+| C G |1: G - A | F E F D |2: G C4 | G F E D :1| C - :2|
 ```
 
 Nesse exemplo foi numerado os compassos afim de ver o momento em que serão repetidos
 Escrevendo o exemplo por extenso ficaria dessa forma:
 
 ```
- 1      2      3         4      5         2       3         6     2       3         4            
-| C G | G - A | F E F D | G C4 | G F E D | G - A | F E F D | C - | G - A | F E F D | G C4 |
+ 1      2      3         4      5         2       3           
+| C G | G - A | F E F D | G C4 | G F E D | G - A | F E F D | 
+  4      5         6     4      5         6
+| G C4 | G F E D | C - | G C4 | G F E D | C - |
 ```
 
-Explicando esse caso: Tocamos do compasso 1 até 5 onde encontramos a chamada para referência **:|1|** (toque da referencia até 1) então tocamos 2 e 3, após isso seguimos no compasso 6, onde temos uma nova chamda de referência, **:|2|** (toque da referencia até 2) então tocamos os compassos 2, 3 e 4
+Explicando esse caso: Tocamos do compasso 1 até 5 onde encontramos a chamada para referência **:1|** (toque da referencia 1 até aqui) então tocamos 2 à 5, após isso seguimos no compasso 6, onde temos uma nova chamda de referência, **:2|** (toque da referencia 2 até aqui) então tocamos os compassos 4, 5 e 6 novamente
 
-### Referência pontual avançada 2
-Outra forma de criar referências é de nomearmos o inicio das referencias utilizando o simbolo de incio de referencia juntamente com um número, da seguinte forma: **|1:** ; Para utilizar ao realizar uma chamada indicaremos o numero do inicio e o número do termino separados por um **-** (hífen), **:|1-1|**
+### Referência pontual avançada
+Também é possível indicar o término de uma repetição, para isso basta que em sua chamada sejá indicado a referencia de inicio e fim separados por um **-** (hífen), **:1-2|**
 
 Exemplo:
 ```
  1       2         3            4         5              6
-|1: C G |2: G - A | F E F D |:1| G C4 |:2| G F E D :|2-1| C - :|1-2|
+|1: C G |2: G - A | F E F D |3: G C4 |4: G F E D :|2-3| C - :|1-4|
 ```
 
 Por extenso teremos a seguinte melodia:
