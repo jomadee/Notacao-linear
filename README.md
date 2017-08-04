@@ -124,6 +124,52 @@ Forma 1: C||3) 5.5 5.5 | 6 5 2 |4 1+3 |
 C||) 53.5 53.5 | 63 53 23 | 14+3 |
 ```
 
+```
+T60C|
+|3) G.5 G.5 | A G D |4 C+3 |3 G.5 G.5 | A G B A | A 
+```
+	
+--------------------------------------------------------------------------------
+	
+```
+|3 C+1 G+1 |: G+1 -.5 A | F E F D |:1| G+1 C4+1 :|1| G F E D | C+1 -+1 | % |
+
+
+|3 C+1 G+1 | G+1 -.5 A | F E F D | G+1 C4+1 | G+1 -.5 A | F E F D  | G F E D | C+1 -+1 | C+1 -+1 |
+
+
+x:  C D E F | F F
+[1]: C D E F | F F
+[2]: C D E F | F F
+
+x:  C G F E | E E [1]| E F E F | F F [2]|
+[3]: C G F E | E E [1]| E F E F | F F [2]|
+
+|: C D E F | F F |:1| C D C D | D D |:2|: C G F E | E E :|1| E F E F | F F |:3|:|2:|3
+
+|: C D E F | F F |:1| C D C D | D D |:2| C G F E | E E :|1| E F E F | F F :|2|
+Do retorno até
+|:  = retorno
+:|n = do retorno até n
+
+
+
+//retornos por extenso
+|3|: C+1 G+1 |2: G+1 -.5 A | F E F D |:1| G+1 C4+1 :|2-1| G F E D | C+1 -+1 | % :|1|
+
+B|3|: 1+1 5+1 |2:|( 5+1 -.5 6 | 4 3 4 2 |:1| 5+1 14+1 :|2-1| 5 4 3 2 | 1+1 -+1 | % :|1|
+
+C|3|: 1+1 5+1 |2:|( 5+1 -.5 6 | 4 3 4 2 |:1| 5+1 14+1 :|2-1| 5 4 3 2 | 1+1 -+1 | % :|1|
+
+D|3|: 1+1 5+1 |2:|( 5+1 -.5 6 | 4 3 4 2 |:1| 5+1 14+1 :|2-1| 5 4 3 2 | 1+1 -+1 | % :|1|
+
+C|4|: 1+1 5+1 |2:|( 5+1 -.5 6 | 4 3 4 2 |:1| 5+1 14+1 :|2-1| 5 4 3 2 | 1+1 -+1 | % :|1|
+
+```
+
+
+
+
 ## Comentários
 
 Utilize um texto entre o simbolo de * para um comentario
@@ -131,3 +177,4 @@ Utilize um texto entre o simbolo de * para um comentario
 ```
 C||3) *com pedal* G.5 G.5| A G D | C4+3 |
 ```
+
