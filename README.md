@@ -124,6 +124,78 @@ Forma 1: C||3) 5.5 5.5 | 6 5 2 |4 1+3 |
 C||) 53.5 53.5 | 63 53 23 | 14+3 |
 ```
 
+## Retornos
+Em nossa notação não utilizamos o conceito de retornos, mas sim de marcações de partes da música e de chamadas a essas marcações.
+
+### Chamadas simples
+Para dizer que iremos tocar o mesmo compaço novamente deve se utizar o simbolo **%** no compaço subsequente.
+Exemplo:
+
+```
+| C D E F | % |
+```
+
+Isso seria o mesmo que escrever
+
+```
+| C D E F | C D E F |
+```
+
+Após o sinal de **%** podemos colocar o número, referente a quantidade de compassos anteriores que iremos repetir, ou seja, para repetir os ultimos três compassos deve se escrever **%3**
+
+Exemplo:
+
+```
+| C D E F | G A B C | %2 |
+```
+
+Seria o mesmo que escrever 
+
+
+```
+| C D E F | G A B C |  C D E F | G A B C  |
+```
+
+### Referência simples
+Para fazer uma referencia simples de execução de compaços anteriores utilizaremos o simbolo **|:** para representar o inicio de uma referência e o símbolo **:|** para realizar uma chamada a referência.
+
+Exemplo:
+
+```
+|: C D E F | F F | C D C D | D D | C G F E | E E | C D E F | F F :|
+
+```
+
+Dessa forma dizemos que quando chegarmos a **:|** iremos tocar novamente tudo que estiver depois de **|:**, isso seria o mesmo que tocar:
+
+```
+| C D E F | F F | C D C D | D D | C G F E | E E | C D E F | F F | 
+| C D E F | F F | C D C D | D D | C G F E | E E | C D E F | F F |
+```
+### Referência pontual
+Uma referencia pontual é quando é especificado um ponto de termino da execução para isso deve-se usar o simbolo **|:|**
+Exemplo:
+
+```
+|: C D E F | F F |:| C D C D | D D | C G F E | E E :|
+```
+
+Conforme o exemplo, iremos tocar toda a música até **:|** ao chegar nesse ponto tocamos de **|:** até **|:|**, seria o mesmo que escrever assim:
+
+```
+| C D E F | F F | C D C D | D D | C G F E | E E | C D E F | F F |
+```
+
+### Referência pontual avançada
+
+Exemplo:
+```
+| C G |: G - A | F E F D |:1| G C4 :|1| G F E D | C - |
+```
+
+
+
+
 ## Comentários
 
 Utilize um texto entre o simbolo de * para um comentario
