@@ -98,6 +98,16 @@ Em cifra (Forma inteligível)
 Em cifra com intervalo abreviado (Forma inteligível simplificada)
 *C||3 C.5*
 
+## Pausa
+As pausas são simbolizadas por **-**, e a definicão de sua duração é igual de uma nota.
+
+Exemplo
+```
+| C D E - | G A -+1|
+```
+
+Esse exemplo seria lido da seguinte forma: dó, ré, mi, pausa de um tempo, sol, la, pausa de dois tempos.
+
 ## Exemplos
 
 ### Música Parabéns a você
