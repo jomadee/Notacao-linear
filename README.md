@@ -5,17 +5,33 @@ Uma forma de escrever melodias musicais no computador com textos simples ou até
 É necessário que você já tenha um conhecimento musical mínino a fim de utilizar essa notação, usaremos a notação de Cifras como base de escrita, ou seja, as notas serão representadas pelas letras: A B C D E F G
 
 ## Compasso
-O simbolo de divisão de compasse será **|**
+O simbolo de divisão de compasso será **|**, para representar o inicio da música utilizamos uma marcação dupla de compasso **||**, todo elemento de configuração da notação deve ser colocado antes dessa referência 
 
 ```
-ex: | C D E F | G A B C |
+ex: || C D E F | G A B C |
 ```
+Obs: a marcação de início da música pode ser utilizado no meio de uma notação para mudar as configurações
 
 ## Gráus
-|Tom | 1 | 2 | 3  | 4 | 5 | 6 | 7  |
-|----|---|---|----|---|---|---|----|
-|  C | C | D | E  | F | G | A | B  |
-|  D | D | E | F# | G | A | B | C# |
+Grau musical é uma nomenclatura criada para ajudar o músico na localização dos intervalos. 
+
+Gráus na escala maior de **C** e **D**
+
+|Tom | 1º | 2º | 3º  | 4º | 5º | 6º | 7º  |
+|----|----|----|-----|----|----|----|-----|
+| C  | C  | D  | E   | F  | G  | A  | B   |
+| D  | D  | E  | F#  | G  | A  | B  | C#  |
+
+
+### Representação do tom da música 
+Utilize o simbolo (letra) correspondente ao tom desejado no início da escrita seguido de uma barra de compasso
+
+Exemplo:
+```
+Para tom em C = C|| 1 2 3 4 | 5 6 7 8 |
+Trascrição      C|| C D E F | G A B C |
+Para tom em E = E|| E F# G# A | B C# D# E |
+```
 
 ### Khz ou intervalos de 8ª
 
@@ -29,18 +45,11 @@ Exemplo:
 ```
 Forma extensa:   C||  C3 D3 E3 F3 | G3 A3 B3 C4 |
 Forma abreviada: C||3 C  D  E  F  | G  A  B  C4 |
-                 C||3 C  D  E  F  | G  A  B  C4 |
-                 C||3 1  2  3  4  | 5  6  7  14 |
+		 C||3 1  2  3  4  | 5  6  7  14 |
+		 D||3 D  E  F# G  | A  B  C# D4 |				 
+                 D||3 1  2  3  4  | 5  6  7  14 |
 ```
 
-### Representação do da música 
-Utilize o simbolo correspondente ao tom desejado no incio da escrita
-Exemplo:
-```
-Para tom em C = C|| 1 2 3 4 | 5 6 7 8 |
-Trascrição      C|| C D E F | G A B C |
-Para tom em E = E|| E F# G# A | B C# D# E |
-```
     
 ## Sinais de dinâmica
 
