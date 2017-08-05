@@ -29,8 +29,8 @@ Exemplo:
 ```
 Forma extensa:   C||  C3 D3 E3 F3 | G3 A3 B3 C4 |
 Forma abreviada: C||3 C  D  E  F  | G  A  B  C4 |
-                 C||3 C  D  E  F  | G  A  B  C/ |
-                 C||3 1  2  3  4  | 5  6  7  1/ |
+                 C||3 C  D  E  F  | G  A  B  C4 |
+                 C||3 1  2  3  4  | 5  6  7  14 |
 ```
 
 ### Representação do da música 
@@ -41,24 +41,24 @@ Para tom em C = C|| 1 2 3 4 | 5 6 7 8 |
 Trascrição      C|| C D E F | G A B C |
 Para tom em E = E|| E F# G# A | B C# D# E |
 ```
-   
+    
 ## Sinais de dinâmica
 
-|    |   |
-|----|---|
-|ppp | { |
-|pp  | [ |
-|p   | ( |
-|mp  | < |
-|mf  | > |
-|f   | ) |
-|ff  | ] |
-|fff | } |
+|    |     |
+|----|-----|
+|ppp | >>> |
+|pp  | >>  |
+|p   | >   |
+|mp  | <>  |
+|mf  | ><  |
+|f   | <   |
+|ff  | <<  |
+|fff | <<< |
 
 Exemplo:
 ```
-Forma extensa:   | C( D( E( F( | G> A> B> C> |
-Forma abreviada: | C( D E F | G> A B C |
+Forma extensa:   | C< D< E< F< | G> A> B> C> |
+Forma abreviada: |< C D E F |> G A B C |
 ```
 
 ## Tempo das notas
@@ -230,13 +230,20 @@ Por extenso teremos a seguinte melodia:
 ```
 
 ## Ligadura
+Para indicar ligadura entre as notas utiliza-se o símbolo **~** na nota anterior a que será ligada
+
+Exemplo:
+
+```
+| C D E F~ | F G A B |
+```
 
 ## Acordes
 Para indicar que mais de uma nota sera tocada ao mesmo tempo utilizamos o simbolo **^** entre as notas desejadas, uma observação é que a duração da nota pode ser descrita apenas na última nota do conjunto, sendo assim todas as anteriores terão a mesma duração
 
 Exemplo
 ```
-| C3^G3^C4 A E D |
+| C4^G3^C3+1 A D |
 ```
 
 ## Comentários
