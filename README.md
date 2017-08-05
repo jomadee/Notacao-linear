@@ -229,6 +229,15 @@ Por extenso teremos a seguinte melodia:
 | C G | G - A | F E F D | G C4 | G F E D | G - A | F E F D | C - | C G | G - A | F E F D | G C4 |
 ```
 
+## Ligadura
+
+## Acordes
+Para indicar que mais de uma nota sera tocada ao mesmo tempo utilizamos o simbolo **^** entre as notas desejadas, uma observação é que a duração da nota pode ser descrita apenas na última nota do conjunto, sendo assim todas as anteriores terão a mesma duração
+
+Exemplo
+```
+| C3^G3^C4 A E D |
+```
 
 ## Comentários
 
