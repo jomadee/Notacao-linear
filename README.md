@@ -17,10 +17,10 @@ Grau musical é uma nomenclatura criada para ajudar o músico na localização d
 
 Gráus na escala maior de **C** e **D**
 
-|Tom | 1º | 2º | 3º  | 4º | 5º | 6º | 7º  |
-|----|----|----|-----|----|----|----|-----|
-| C  | C  | D  | E   | F  | G  | A  | B   |
-| D  | D  | E  | F#  | G  | A  | B  | C#  |
+| Tom  | 1º   | 2º   | 3º   | 4º   | 5º   | 6º   | 7º   |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| C    | C    | D    | E    | F    | G    | A    | B    |
+| D    | D    | E    | F#   | G    | A    | B    | C#   |
 
 
 ### Representação do tom da música 
@@ -35,10 +35,10 @@ Para tom em E = E|| E F# G# A | B C# D# E |
 
 ### Khz ou intervalos de 8ª
 
-| C3	| D3	| E3	| F3	| G3	| A3	| B3    | A4  | A5   |
-|-------|-------|-------|-------|-------|-------|-------|-----|------|
-| 261.6	| 293.6	| 329.6	| 349.2	| 391.9	| 440	| 493.8 | 880 | 1760 |
-	
+| C3    | D3    | E3    | F3    | G3    | A3   | B3    | A4   | A5   |
+| ----- | ----- | ----- | ----- | ----- | ---- | ----- | ---- | ---- |
+| 261.6 | 293.6 | 329.6 | 349.2 | 391.9 | 440  | 493.8 | 880  | 1760 |
+
 O intervalo de uma nota pode ser definido com o número correspondente exatamente após a nota ou no inicio do compasso, nesse caso todas as notas desse compasso e dos próximos estarão na mesma oitava até que seja alterado em um novo compasso ou em casos em que o intervalo esteja especificado na nota,
 
 Exemplo:
@@ -50,19 +50,19 @@ Forma abreviada: C||3 C  D  E  F  | G  A  B  C4 |
                  D||3 1  2  3  4  | 5  6  7  14 |
 ```
 
-    
+
 ## Sinais de dinâmica
 
-|    |     |
-|----|-----|
-|ppp | >>> |
-|pp  | >>  |
-|p   | >   |
-|mp  | <>  |
-|mf  | ><  |
-|f   | <   |
-|ff  | <<  |
-|fff | <<< |
+|      |      |
+| ---- | ---- |
+| ppp  | >>>  |
+| pp   | >>   |
+| p    | >    |
+| mp   | <>   |
+| mf   | ><   |
+| f    | <    |
+| ff   | <<   |
+| fff  | <<<  |
 
 Exemplo:
 ```
@@ -71,20 +71,20 @@ Forma abreviada: |< C D E F |> G A B C |
 ```
 
 ## Tempo das notas
-Imaginaremos o seguinte cenario, uma música que está a 60BPM logo teremos uma *batida* por segundo, assim então compreendemos que o tempo inteiro corresponde a **1s**, para demonstrar isso na notação vamos utilizar a seguinte tabela:
+Imaginaremos o seguinte cenario, uma música que está a **60BPM** logo teremos uma *batida* por segundo, assim então compreendemos que o tempo inteiro corresponde a **1s**, para demonstrar isso na notação vamos utilizar a seguinte tabela:
 
-|np*	| s	| Transcrição |
-|-------|-------|-------------|
-|	| 6	| +5          |
-|1	| 4	| +3          |
-|1/2	| 2	| +1          |
-|1/4	| 1	|             |
-|1/8.	| 0,75	|             |
-|1/8	| 0,5	| .5          |
-|1/16.	| 0,37	|             |
-|1/16	| 0,25	| .25         |
-|1/32.	| 0,18	|             |
-|1/32	| 0,12	| .12         |
+| np*   | s = 1 | Transcrição |
+| ----- | ----- | ----------- |
+|       | 6     | +5          |
+| 1     | 4     | +3          |
+| 1/2   | 2     | +1          |
+| *1/4* | *1*   |             |
+| 1/8.  | 0,75  |             |
+| 1/8   | 0,5   | .5          |
+| 1/16. | 0,37  |             |
+| 1/16  | 0,25  | .25         |
+| 1/32. | 0,18  |             |
+| 1/32  | 0,12  | .12         |
 
 *Notação em pauta musical convencional
 
@@ -248,16 +248,16 @@ Exemplo:
 ```
 
 ## Acordes
-Para indicar que mais de uma nota sera tocada ao mesmo tempo utilizamos o simbolo **^** entre as notas desejadas, uma observação é que a duração da nota pode ser descrita apenas na última nota do conjunto, sendo assim todas as anteriores terão a mesma duração
+Para indicar que mais de uma nota sera tocada ao mesmo tempo basta colocalas entre **[ ]**, uma observação é que a duração da nota pode ser descrita apenas após o conjunto, sendo assim todas  notas terão a mesma duração
 
-Exemplo
+Exemplo:
 ```
-| C4^G3^C3+1 A D |
+| [C4 G3 C3]+1 A D |
 ```
 
 ## Comentários
 
-Utilize um texto entre o simbolo de * para um comentario
+Utilize um texto entre o simbolo de ***** para um comentario
 
 ```
 C||3) *com pedal* G.5 G.5| A G D | C4+3 |
