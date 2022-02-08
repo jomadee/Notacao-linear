@@ -2,7 +2,9 @@
 Uma forma de escrever melodias musicais no computador com textos simples ou até mesmo a mão, sem a necessidade de uma pauta
 
 ## Notas musicais
-É necessário que você já tenha um conhecimento musical mínino a fim de utilizar essa notação, usaremos a notação de Cifras como base de escrita, ou seja, as notas serão representadas pelas letras: A B C D E F G
+É necessário que você já tenha um conhecimento musical mínino a fim de utilizar essa notação, usaremos a notação de Germânica como base de escrita, ou seja, as notas serão representadas pelas letras: A B C D E F G
+
+Endenda mais sobre a notação germânica [clicando aqui](https://pt.wikipedia.org/wiki/ABC_(nota%C3%A7%C3%A3o_musical))
 
 ## Compasso
 O simbolo de divisão de compasso será **|**, para representar o inicio da música utilizamos uma marcação dupla de compasso **||**, todo elemento de configuração da notação deve ser colocado antes dessa referência 
