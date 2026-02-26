@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C D:/www/Notacao-linear log --oneline -10)"
+    ]
+  }
+}

@@ -9,20 +9,37 @@ Acidentes são representados pelo símbolo **#** (sustenido) e **b** (bemol) log
 Entenda mais sobre a notação germânica [clicando aqui](https://pt.wikipedia.org/wiki/ABC_(nota%C3%A7%C3%A3o_musical))
 
 ## Compasso
-O símbolo de divisão de compasso será **|**, para representar o início da música utilizamos uma marcação dupla de compasso **||**, todo elemento de configuração da notação deve ser colocado antes dessa referência
+O símbolo de divisão de compasso será **|**, para representar o início da música utilizamos uma marcação dupla de compasso **||**, todo elemento de configuração da notação deve ser colocado após essa referência
 
 ```
 ex: || C D E F | G A B C |
 ```
-Obs: a marcação de início da música pode ser utilizada no meio de uma notação para mudar as configurações
+
+A ordem dos elementos de configuração após `||` é: **Tom**, **Fórmula de compasso** e **Oitava**, todos opcionais.
+
+```
+|| [tom] [fórmula] [oitava] notas...
+```
+
+Obs: a marcação `||` pode ser utilizada no meio de uma notação para mudar as configurações
 
 ## Representação do tom da música
-Utilize o símbolo (letra) correspondente ao tom desejado no início da escrita seguido de uma barra de compasso
+Utilize o símbolo (letra) correspondente ao tom desejado logo após o `||`
 
 Exemplo:
 ```
-Tom em C: C|| C D E F | G A B C |
-Tom em E: E|| E F# G# A | B C# D# E |
+Tom em C: || C C D E F | G A B C |
+Tom em E: || E E F# G# A | B C# D# E |
+```
+
+## Fórmula de compasso
+A fórmula de compasso indica quantos tempos cabem em cada compasso e qual figura vale um tempo. Ela é representada no formato tradicional (ex: **4/4**, **3/4**, **6/8**) e posicionada após o tom.
+
+Exemplo:
+```
+|| C 4/4 C D E F | G A B C |
+|| D 3/4 D E F | G A B |
+|| C 6/8 C D E F G A | B C D E F G |
 ```
 
 ## Oitavas
@@ -31,32 +48,15 @@ Tom em E: E|| E F# G# A | B C# D# E |
 | ----- | ----- | ----- | ----- | ----- | ---- | ----- | ----- |
 | 261,6 | 293,7 | 329,6 | 349,2 | 392,0 | 440  | 493,9 | 523,3 |
 
+A oitava padrão da notação é a **4ª oitava** (onde se encontra o dó central do piano, C4 = 261,6 Hz). Quando nenhuma oitava é especificada, todas as notas são interpretadas na 4ª oitava.
+
 A oitava de uma nota pode ser definida com o número correspondente exatamente após a nota ou no início do compasso. Nesse caso, todas as notas desse compasso e dos próximos estarão na mesma oitava até que seja alterado em um novo compasso ou em casos em que a oitava esteja especificada na nota.
 
 Exemplo:
 ```
-Forma extensa:   C||  C4 D4 E4 F4 | G4 A4 B4 C5 |
-Forma abreviada: C||4 C  D  E  F  | G  A  B  C5 |
-                 D||4 D  E  F# G  | A  B  C# D5 |
-```
-
-## Sinais de dinâmica
-
-| Dinâmica | Símbolo |
-| -------- | ------- |
-| ppp      | >>>     |
-| pp       | >>      |
-| p        | >       |
-| mp       | <>      |
-| mf       | ><      |
-| f        | <       |
-| ff       | <<      |
-| fff      | <<<     |
-
-Exemplo:
-```
-Forma extensa:   | C< D< E< F< | G> A> B> C> |
-Forma abreviada: |< C D E F |> G A B C |
+Forma extensa:   || C 4/4  C4 D4 E4 F4 | G4 A4 B4 C5 |
+Forma abreviada: || C 4/4 4 C  D  E  F | G  A  B  C5 |
+                 || D 4/4 4 D  E  F# G | A  B  C# D5 |
 ```
 
 ## Tempo das notas
@@ -66,14 +66,16 @@ Imaginaremos o seguinte cenário: uma música que está a **60BPM**, logo teremo
 | -------------------- | ---------------- | ----------- |
 | 1.                   | 6                | +5          |
 | 1                    | 4                | +3          |
+| 1/2.                 | 3                | +2          |
 | 1/2                  | 2                | +1          |
+| 1/4.                 | 1,5              | +.5         |
 | *1/4*                | *1*              |             |
-| 1/8.                 | 0,75             |             |
+| 1/8.                 | 0,75             | .75         |
 | 1/8                  | 0,5              | .5          |
-| 1/16.                | 0,37             |             |
+| 1/16.                | 0,375            | .375        |
 | 1/16                 | 0,25             | .25         |
-| 1/32.                | 0,18             |             |
-| 1/32                 | 0,12             | .12         |
+| 1/32.                | 0,1875           | .1875       |
+| 1/32                 | 0,125            | .125        |
 
 *Notação em pauta musical convencional
 
@@ -86,12 +88,14 @@ Exemplo:
 
 > **Regra de leitura:** A ordem de leitura é: **Nota + Oitava (opcional, 1 dígito) + Duração (opcional, .X ou +X)**. Exemplo: `E4.5` = nota Mi, 4ª oitava, meio tempo.
 
-## Formas de escrita
+> **Importante:** Um número isolado após a nota **sempre** indica oitava, **nunca** duração. A duração obrigatoriamente utiliza os prefixos **+** ou **.**. Portanto `E4` = Mi na 4ª oitava, enquanto `E+3` = Mi com duração de 4 tempos (semibreve).
 
-### Exemplo de escrita da nota C (Dó) de meio tempo na 4ª oitava com o tom da música em C
+### Exemplo completo
 
-- Forma completa: `C|| C4.5`
-- Forma abreviada: `C||4 C.5`
+Escrita da nota C (Dó) de meio tempo na 4ª oitava com o tom da música em C:
+
+- Forma completa: `|| C 4/4 C4.5`
+- Forma abreviada: `|| C 4/4 4 C.5`
 
 ## Pausa
 As pausas são simbolizadas por **-**, e a definição de sua duração é igual à de uma nota.
@@ -108,23 +112,33 @@ O símbolo **)** após a marcação de início indica que as notas seguintes, an
 
 Exemplo:
 ```
-C||4) G.5 G.5 | A G D | C5+3 |
+|| C 4/4 4) G.5 G.5 | A G D | C5+3 |
 ```
 Neste caso, `G.5 G.5` são as notas da anacruse, tocadas antes do primeiro tempo forte.
 
-## Exemplos
+## Ligadura
+Para indicar ligadura entre as notas utiliza-se o símbolo **~** na nota anterior à que será ligada
 
-### Música Parabéns a Você
+Exemplo:
 
-#### Com notas de forma abreviada
 ```
-Forma 1: C||4) G.5 G.5 | A G D | C5+3 |
-Forma 2: C||4) G.5 G.5 | A G D |5 C+3 |
+| C D E F~ | F G A B |
 ```
 
-#### Com notas por extenso
+## Acordes
+Para indicar que mais de uma nota será tocada ao mesmo tempo basta colocá-las entre **[ ]**. Uma observação é que a duração da nota pode ser descrita apenas após o conjunto, sendo assim todas as notas terão a mesma duração
+
+Exemplo:
 ```
-C||) G4.5 G4.5 | A G D | C5+3 |
+| [C5 G4 C4]+1 A D |
+```
+
+## Comentários
+
+Utilize um texto entre chaves **{ }** para um comentário
+
+```
+|| C 4/4 4) {com pedal} G.5 G.5| A G D | C5+3 |
 ```
 
 ## Retornos
@@ -222,27 +236,37 @@ Por extenso teremos a seguinte melodia:
 | C G | G - A | F E F D | G C5 | G F E D | G - A | F E F D | C - | C G | G - A | F E F D | G C5 |
 ```
 
-## Ligadura
-Para indicar ligadura entre as notas utiliza-se o símbolo **~** na nota anterior à que será ligada
+## Exemplos
 
-Exemplo:
+### Música Parabéns a Você
 
+#### Com notas de forma abreviada
 ```
-| C D E F~ | F G A B |
-```
-
-## Acordes
-Para indicar que mais de uma nota será tocada ao mesmo tempo basta colocá-las entre **[ ]**. Uma observação é que a duração da nota pode ser descrita apenas após o conjunto, sendo assim todas as notas terão a mesma duração
-
-Exemplo:
-```
-| [C5 G4 C4]+1 A D |
+Forma 1: || C 4/4 4) G.5 G.5 | A G D | C5+3 |
+Forma 2: || C 4/4 4) G.5 G.5 | A G D |5 C+3 |
 ```
 
-## Comentários
+#### Com notas por extenso
+```
+|| C 4/4) G4.5 G4.5 | A G D | C5+3 |
+```
 
-Utilize um texto entre o símbolo de ***** para um comentário
+### Ode à Alegria — 9ª Sinfonia de Beethoven (4º Movimento)
 
 ```
-C||4) *com pedal* G.5 G.5| A G D | C5+3 |
+|| D 4/4 4 |1: F# F# G A | A G F# E | D D E F# |2: F#+.5 E.5 E+1 :|1-2| E+.5 D.5 D+1 | E E F# D | E F#.5 G.5 F# D | E F#.5 G.5 F# E | D E A3+1 :|1-2| E+.5 D.5 D+1 |
+```
+
+Nesse exemplo, `:|1-2|` repete os compassos da referência 1 até a referência 2 (os três primeiros compassos do tema). Isso é utilizado duas vezes: primeiro para a repetição do tema A com um final diferente, e depois para o retorno do tema A após a seção B.
+
+Por extenso a melodia ficaria assim:
+```
+{Tema A - 1º final}
+| F# F# G A | A G F# E | D D E F# | F#+.5 E.5 E+1 |
+{Tema A - 2º final}
+| F# F# G A | A G F# E | D D E F# | E+.5 D.5 D+1 |
+{Seção B}
+| E E F# D | E F#.5 G.5 F# D | E F#.5 G.5 F# E | D E A3+1 |
+{Tema A - retorno}
+| F# F# G A | A G F# E | D D E F# | E+.5 D.5 D+1 |
 ```
